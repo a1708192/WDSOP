@@ -1,6 +1,6 @@
 
 
-Covariance Matrix Adaptation Greedy Search Applied to Water Distribution System Optimization
+#Covariance Matrix Adaptation Greedy Search Applied to Water Distribution System Optimization#
 
 01/08/2019
 ================================================================
@@ -40,7 +40,7 @@ https://au.mathworks.com/help/matlab/matlab_external/changing-default-compiler.h
 
 https://mingw-w64.org/doku.php/download
 ======================================================================
-Functions :
+#Functions :#
 
 set_Network_name      :     initializing the network name 
 set_dim               :     initializing the diameters of the applied pipes
@@ -58,7 +58,7 @@ Upward_Greedy_Search  :     applying the strategy of upward greedy search
 rep                   :     counting the same pipe configurations
 Dim_Correction        :     converting the continuous designs to the nearest possible ones
 =======================================================================
-The structure of recorded results:
+#The structure of recorded results:#
 Pipe:                The main structure
 UGSflag:             a flag (0/1) shows the upward greedy search is run or not                  
 DGSflag:             a flag (0/1) shows the downward greedy search is run or not
