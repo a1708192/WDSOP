@@ -1,6 +1,4 @@
-
-
-#Covariance Matrix Adaptation Greedy Search Applied to Water Distribution System Optimization#
+# Covariance Matrix Adaptation Greedy Search Applied to Water Distribution System Optimization #
 
 01/08/2019
 ================================================================
@@ -40,44 +38,48 @@ https://au.mathworks.com/help/matlab/matlab_external/changing-default-compiler.h
 
 https://mingw-w64.org/doku.php/download
 ======================================================================
-#Functions :#
+# Functions #
+|Function|Description|
+|---------|---------|
+|set_Network_name|initializing the network name |
+|set_dim|initializing the diameters of the applied pipes|
+|set_fitfun|setting the cost function name |
+|Def_Iter              |     used for an iterative network like DNYTP and 50NYTP|
+|Def_Constraint        |     determining the Nodal pressure head constraints|
+|set_Bestfmin          |     estimating of the near-optimum network cost design |
+|initialize_xstart     |     initializing the first population|
+|Def_TolFun            |     defining the tolerance of the fitness function as a stopping criterian|
+|set_Max_Eval          |     initializing the maximum evaluation number|
+|cmaes                 |     CMAES function|
+|Finding_best          |     recording the best continuous, discrete and possible pipe configurations     |
+|Downward_Greedy_Search|     applying the strategy of downward greedy search |
+|Upward_Greedy_Search  |     applying the strategy of upward greedy search|
+|rep                   |     counting the same pipe configurations|
+|Dim_Correction        |     converting the continuous designs to the nearest possible ones|
 
-set_Network_name      :     initializing the network name 
-set_dim               :     initializing the diameters of the applied pipes
-set_fitfun            :     setting the cost function name 
-Def_Iter              :     used for an iterative network like DNYTP and 50NYTP
-Def_Constraint        :     determining the Nodal pressure head constraints
-set_Bestfmin          :     estimating of the near-optimum network cost design 
-initialize_xstart     :     initializing the first population
-Def_TolFun            :     defining the tolerance of the fitness function as a stopping criterian
-set_Max_Eval          :     initializing the maximum evaluation number
-cmaes                 :     CMAES function
-Finding_best          :     recording the best continuous, discrete and possible pipe configurations     
-Downward_Greedy_Search:     applying the strategy of downward greedy search 
-Upward_Greedy_Search  :     applying the strategy of upward greedy search
-rep                   :     counting the same pipe configurations
-Dim_Correction        :     converting the continuous designs to the nearest possible ones
-=======================================================================
-#The structure of recorded results:#
-Pipe:                The main structure
-UGSflag:             a flag (0/1) shows the upward greedy search is run or not                  
-DGSflag:             a flag (0/1) shows the downward greedy search is run or not
-Continuous_Sols      a matrix of all continuous pipe designs (design number * network pipe number)
-Continuous_Cost      an array of the continuous pipe costs 
-Continuous_Violation an array of total violations of all continuous pipes
-Rounded_Sols         a matrix of all possible pipe designs (design number * network pipe number)
-Rounded_Cost         an array of the possible pipe costs 
-Rounded_Violation    an array of total violations of all possible pipes
-UGS_Sols             a matrix of all possible pipe designs after applying the upward greedy search (design number * network pipe number)
-UGS_Cost             an array of the possible pipe costs after applying the upward greedy search
-XminU                a variable shows the best pipe design of upward greedy search
-FminU                a variable shows the best pipe cost of upward greedy search
-XminC                a variable shows the best continuous pipe design 
-FminC                a variable shows the best continuous pipe cost 
-XminD                a variable shows the best discrete pipe design 
-FminD                a variable shows the best discrete pipe cost
-UGS_Sols             a matrix of all possible pipe designs after applying the downward greedy search (design number * network pipe number)
-UGS_Cost             an array of the possible pipe costs after applying the downward greedy search             
+
+# The structure of recorded results #
+|Variables |Description|
+|---------|---------|
+|Pipe|               The main structure|
+|UGSflag|             a flag (0/1) shows the upward greedy search is run or not                  |
+|DGSflag|             a flag (0/1) shows the downward greedy search is run or not|
+|Continuous_Sols|      a matrix of all continuous pipe designs (design number * network pipe number)|
+|Continuous_Cost|      an array of the continuous pipe costs |
+|Continuous_Violation| an array of total violations of all continuous pipes|
+|Rounded_Sols|         a matrix of all possible pipe designs (design number * network pipe number)|
+|Rounded_Cost|         an array of the possible pipe costs |
+|Rounded_Violation|    an array of total violations of all possible pipes|
+|UGS_Sols|             a matrix of all possible pipe designs after applying the upward greedy search (design number * network pipe number)|
+|UGS_Cost|             an array of the possible pipe costs after applying the upward greedy search|
+|XminU|                a variable shows the best pipe design of upward greedy search|
+|FminU |               a variable shows the best pipe cost of upward greedy search|
+|XminC |               a variable shows the best continuous pipe design |
+|FminC |               a variable shows the best continuous pipe cost |
+|XminD |               a variable shows the best discrete pipe design |
+|FminD |               a variable shows the best discrete pipe cost|
+|UGS_Sols|             a matrix of all possible pipe designs after applying the downward greedy search (design number * network pipe number)|
+|UGS_Cost |            an array of the possible pipe costs after applying the downward greedy search             |
 
 In the following there are the details of EPANET Matlab version.
 
