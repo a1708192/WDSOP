@@ -77,33 +77,33 @@ UGSflag:             a flag (0/1) shows the upward greedy search is run or not
 
 DGSflag:             a flag (0/1) shows the downward greedy search is run or not
 
-Continuous_Sols      a matrix of all continuous pipe designs (design number * network pipe number)
+Continuous_Sols:      a matrix of all continuous pipe designs (design number * network pipe number)
 
-Continuous_Cost      an array of the continuous pipe costs 
+Continuous_Cost:      an array of the continuous pipe costs 
 
-Continuous_Violation an array of total violations of all continuous pipes
+Continuous_Violation: an array of total violations of all continuous pipes
 
-Rounded_Sols         a matrix of all possible pipe designs (design number * network pipe number)
+Rounded_Sols :        a matrix of all possible pipe designs (design number * network pipe number)
 
-Rounded_Cost         an array of the possible pipe costs 
+Rounded_Cost:         an array of the possible pipe costs 
 
-Rounded_Violation    an array of total violations of all possible pipes
+Rounded_Violation:    an array of total violations of all possible pipes
 
-UGS_Sols             a matrix of all possible pipe designs after applying the upward greedy search (design number * network pipe number)
+UGS_Sols :            a matrix of all possible pipe designs after applying the upward greedy search (design number * network pipe number)
 
-UGS_Cost             an array of the possible pipe costs after applying the upward greedy search
+UGS_Cost :            an array of the possible pipe costs after applying the upward greedy search
 
-XminU                a variable shows the best pipe design of upward greedy search
+XminU :               a variable shows the best pipe design of upward greedy search
 
-FminU                a variable shows the best pipe cost of upward greedy search
+FminU  :              a variable shows the best pipe cost of upward greedy search
 
-XminC                a variable shows the best continuous pipe design 
+XminC :               a variable shows the best continuous pipe design 
 
-FminC                a variable shows the best continuous pipe cost 
+FminC  :              a variable shows the best continuous pipe cost 
 
-XminD                a variable shows the best discrete pipe design 
+XminD :               a variable shows the best discrete pipe design 
 
-FminD                a variable shows the best discrete pipe cost
+FminD  :              a variable shows the best discrete pipe cost
 
 UGS_Sols             a matrix of all possible pipe designs after applying the downward greedy search (design number * network pipe number)
 
